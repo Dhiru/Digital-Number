@@ -53,7 +53,7 @@ def identify_number(number_list):
     for each_number_index in range(0, 10):
         if list(actual_number_list) == number_index_list[each_number_index]:
             return_number = each_number_index
-    return return_number if return_number else "?"
+    return return_number if return_number or return_number == 0 else "?"
 
 def story2():
     output = story1(file_name)      # call story1
